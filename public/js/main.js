@@ -1,15 +1,21 @@
 define([
   // Libraries
   'underscore',
-  'backbone'
+  'backbone',
+  // Modules
+  'modules/blogfeed/route.blogfeed'
 ],function(
   // Libraries
   _,
-  backbone
+  backbone,
+
+  // Modules
+  routeBlogFeed
 ) {
   return Backbone.Router.extend({
     initialize: function() {
      console.log('it works.');   
+     new routeBlogFeed();
     },
 
     routes: {

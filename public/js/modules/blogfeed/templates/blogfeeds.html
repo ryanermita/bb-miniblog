@@ -1,0 +1,20 @@
+<div class='blogfeed'>
+  <div class='blogContent'>
+    <div>
+      <h3 class='title'> <%= title %> </h3>
+      <div class='options'> <a href='#' class='addPost'> Add New </a> | <a href='#'
+          class='editPost'> Edit </a> | <a href='#'
+          class='deletePost'> Delete 
+      </a> </div>
+    </div>
+    <em class='author'>by: <%= author %> </em>
+    <p class='content'> <%= content %> </p>
+  </div>
+  <div class='editPostForm' hidden>
+    <h3> Edit Post </h3>
+    <input class='postTitle'>
+    <input class='postAuthor'>
+    <textarea rows='20' cols='143' class='postContent'></textarea>
+    <button class='saveChangePost'>Save Changes</button>
+  </div>
+</div>
