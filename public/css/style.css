@@ -2,7 +2,9 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
+h1{
+  text-align: center;
+}
 a {
   color: #00B7FF;
 }
@@ -26,12 +28,14 @@ a {
 }
 
 .postTitle, .postAuthor,
-.postContent{
+.postContent, #addTitle,
+#addContent, #addAuthor{
   display: block;
   margin: 10px;
 }
 
-.postTitle, .postAuthor{
+.postTitle, .postAuthor,
+#addTitle, #addAuthor{
   width: 1158px;
   height: 35px;
 }
