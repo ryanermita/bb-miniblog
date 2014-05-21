@@ -6,6 +6,7 @@ define([
    backbone
 ){
  var Blog= Backbone.Model.extend({
+   //definne model attributes
    defaults: {
      title: '',
      content: '',

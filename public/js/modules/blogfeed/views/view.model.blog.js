@@ -8,7 +8,7 @@ define([
    //libraries
    backbone,
 
-   //templates
+   //define template as blogfeeds
    blogfeeds
 ){
   var BlogEntry = Backbone.View.extend({
@@ -34,13 +34,13 @@ define([
       var title = this.model.get('title'),
           content = this.model.get('content'),
           author = this.model.get('author');
+      //use 'this' to point specific record to update
       this.$('.postTitle').val(title);
       this.$('.postAuthor').val(author);
       this.$('.postContent').val(content);
       
     },
     savePost: function(){
-      //var newTitle = prompt('edit title');
       var title = this.$('.postTitle').val(),
           content = this.$('.postContent').val(),
           author = this.$('.postAuthor').val();
@@ -50,8 +50,7 @@ define([
       
     },
     deletePost: function(){
-      // this destroy method needs 
-      // an id and URI to remove record from db
+      // remove model from collection
        this.model.destroy();
      
       //remove view
